@@ -4,6 +4,7 @@ import Html exposing (..)
 import List exposing (filterMap)
 
 
+testInput : String
 testInput =
     """
 1000
@@ -25,7 +26,7 @@ testInput =
 
 main : Html msg
 main =
-    input
+    testInput
         |> String.trim
         |> String.split "\n"
         |> elfCalorie
